@@ -1,0 +1,23 @@
+{
+  "name": "blockdataai",
+  "version": "1.0.0",
+  "description": "Creating Blockchain Data Aggregator using AI agents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/respawner8/BlockDataAI.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/respawner8/BlockDataAI/issues"
+  },
+  "homepage": "https://github.com/respawner8/BlockDataAI#readme",
+  "dependencies": {
+    "@elizaos/core": "^0.1.9"
+  }
+}
