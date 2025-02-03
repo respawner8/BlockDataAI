@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/respawner8/BlockDataAI#readme",
   "dependencies": {
+    "@azure/cosmos": "^4.2.0",
     "@elizaos/core": "^0.1.9",
     "axios": "^1.7.9"
   }
