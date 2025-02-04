@@ -20,6 +20,8 @@
   "dependencies": {
     "@azure/cosmos": "^4.2.0",
     "@elizaos/core": "^0.1.9",
-    "axios": "^1.7.9"
-  }
+    "axios": "^1.7.9",
+    "agent-twitter-client": "^0.0.18"
+  },
+  "type": "module"
 }
