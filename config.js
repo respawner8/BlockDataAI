@@ -1,0 +1,11 @@
+export const endpoint = "";
+export const key = "";
+export const database = { id: "blockData" };
+export const container = { id: "CoinMetaData" };
+export const twitterUsername = "";
+export const twitterPassword = "";
+export const twitterEmail = "";
+export const twitterAppKey = "";
+export const twitterAppSecret = "";
+export const twitterAccessToken = "";
+export const twitterAccessSecret = "";
