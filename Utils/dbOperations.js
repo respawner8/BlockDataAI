@@ -1,13 +1,13 @@
 //@ts-check
-const CosmosClient = require('@azure/cosmos').CosmosClient;
-const config = require('../config.js');
-const url = require('url');
+import { CosmosClient } from '@azure/cosmos';
+import { endpoint as _endpoint, key as _key, database, container } from '../config.js';
+import url from 'url';
 
-const endpoint = config.endpoint;
-const key = config.key;
+const endpoint = _endpoint;
+const key = _key;
 
-const databaseId = config.database.id;
-const containerId = config.container.id;
+const databaseId = database.id;
+const containerId = container.id;
 const partitionKey = { kind: 'Hash', paths: ['/partitionKey'] };
 
 const options = {
@@ -42,7 +42,7 @@ async function createFamilyItem(itemBody) {
  * Query the container using SQL
  */
 async function queryContainer() {
-  console.log(`Querying container:\n${config.container.id}`);
+  console.log(`Querying container:\n${container.id}`);
 
   const querySpec = {
     query: 'SELECT VALUE r.children FROM root r WHERE r.partitionKey = @country',
@@ -109,7 +109,7 @@ function exit(message) {
   process.stdin.on('data', process.exit.bind(process, 0));
 }
 
-module.exports = {
+export default {
   readContainer,
   createFamilyItem,
   queryContainer,
